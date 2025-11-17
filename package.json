@@ -10,6 +10,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@dataconnect/generated": "file:src/dataconnect-generated",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.0",
     "@supabase/supabase-js": "^2.81.1",
