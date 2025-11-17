@@ -1,48 +1,30 @@
-# EmoVue Blueprint
+# EmoVue Application Blueprint
 
 ## Overview
 
-EmoVue is a Next.js web application that provides a personalized chat experience by understanding user emotions through real-time facial analysis. It features a modern, intuitive interface with a 3D animated homepage and a seamless user authentication flow.
+EmoVue is a web application that understands your emotions and provides a personalized chat experience. It's your AI companion that understands you.
 
-## Project Outline
+## Implemented Features
 
-### Framework & Styling
-- **Framework:** Next.js 14 with App Router
-- **Styling:** Tailwind CSS for a utility-first styling approach.
-- **UI Components:**
-    - `GlassCard`: A reusable card component with a glassmorphism effect, used for creating visually appealing containers.
-    - `FloatingButton`: A reusable button with a floating effect, providing interactive and modern user controls.
+*   **Initial Project Setup:** A Next.js project with basic pages for login, register, chat, and scan.
+*   **Firebase Integration (Attempted):** Initial setup for Firebase hosting and functions was configured but not deployed.
 
-### Backend & Database
-- **Database:** MongoDB Atlas for storing user data.
-- **Authentication:** Custom email and password authentication.
-    - `/api/auth/register`: API endpoint for user registration.
-    - `/api/auth/login`: API endpoint for user login.
-- **Environment Variables:** MongoDB connection string is managed securely using a `.env.local` file.
+## Redesign Plan
 
-### Features & Pages
-- **Homepage (`/`)**
-    - A visually engaging homepage with a 3D animated scene using `react-three-fiber`.
-    - Provides a clear overview of the application's features and purpose.
-    - Includes a call-to-action to encourage user registration.
-    - Demo user credentials are provided for easy access.
-- **Authentication Pages**
-    - **Registration Page (`/register`)**: A clean and simple form for new users to create an account.
-    - **Login Page (`/login`)**: A form for existing users to log in.
-- **Core Application Pages**
-    - **Chat Page (`/chat`)**: The main interface for users to interact with the emotion-aware AI.
-    - **Scan Page (`/scan`)**: A dedicated page for the facial emotion scanning process.
+### Phase 1: Core Pages Redesign
 
-### Project Structure
-- `/app`: Contains the main application pages using the Next.js App Router.
-- `/pages/api`: Contains the API routes for authentication.
-- `/components`: Houses reusable React components for UI and 3D scenes.
-- `/lib`: Includes utility functions, such as the MongoDB connection helper.
+*   **Objective:** To create a modern, visually appealing, and user-friendly interface for the core pages of the application (Login, Register, Chat, and Scan).
+*   **Key Changes:**
+    *   **Color Palette:** Introduce a vibrant and energetic color palette.
+    *   **Typography:** Utilize expressive and hierarchical typography to improve readability and visual appeal.
+    *   **Layout:** Implement a balanced and responsive layout with clean spacing.
+    *   **Component Styling:** Redesign buttons, forms, and other UI elements to be more modern and interactive.
+    *   **Iconography:** Incorporate icons to enhance usability and navigation.
 
-## Current Request: Deploy the Application
+### Execution Steps:
 
-The user has requested to deploy the application.
-
-**Plan:**
-1.  **Create `blueprint.md`:** Document the project's current state, features, and architecture.
-2.  **Deploy to Firebase:** Use the `classic_firebase_hosting_deploy` tool to deploy the Next.js application as a server-side rendered app. The build output is in the `.next` directory.
+1.  **Global Styles:** Update the global stylesheet (`app/globals.css`) with the new color palette, typography, and background styles.
+2.  **Login Page (`app/login/page.tsx`):** Redesign the login form with improved styling and layout.
+3.  **Register Page (`app/register/page.tsx`):** Redesign the registration form to be consistent with the new design.
+4.  **Chat Page (`app/chat/page.tsx`):** Create a modern and intuitive chat interface.
+5.  **Scan Page (`app/scan/page.tsx`):** Design a visually engaging page for the scan feature.

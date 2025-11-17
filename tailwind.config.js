@@ -8,6 +8,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primary': '#00A9FF',
+        'secondary': '#A0E9FF',
+        'dark': '#0F172A',
+        'light': '#CDF5FD',
+      },
+      fontFamily: {
+        sans: ['var(--font-inter)', 'sans-serif'],
+        display: ['var(--font-calsans)', 'sans-serif'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -26,6 +36,9 @@ module.exports = {
           '0%': { transform: 'translateY(50px)', opacity: 0 },
           '100%': { transform: 'translateY(0)', opacity: 1 },
         },
+      },
+      boxShadow: {
+        'glow': '0 0 15px 5px rgba(0, 169, 255, 0.5)',
       },
     },
   },
