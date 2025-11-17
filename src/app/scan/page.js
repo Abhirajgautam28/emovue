@@ -12,6 +12,17 @@ export default function ScanPage() {
   const canvasRef = useRef(null);
   const router = useRouter();
 
+  const startVideo = () => {
+    navigator.mediaDevices
+      .getUserMedia({ video: {} })
+      .then((stream) => {
+        if (videoRef.current) {
+          videoRef.current.srcObject = stream;
+        }
+      })
+      .catch((err) => console.error(err));
+  };
+
   useEffect(() => {
     const loadModels = async () => {
       await Promise.all([
@@ -24,15 +35,6 @@ export default function ScanPage() {
     };
     loadModels();
   }, []);
-
-  const startVideo = () => {
-    navigator.mediaDevices
-      .getUserMedia({ video: {} })
-      .then((stream) => {
-        videoRef.current.srcObject = stream;
-      })
-      .catch((err) => console.error(err));
-  };
 
   const handleVideoOnPlay = () => {
     setInterval(async () => {
@@ -50,12 +52,14 @@ export default function ScanPage() {
           setEmotion(dominantExpression);
         }
 
-        const displaySize = { width: videoRef.current.width, height: videoRef.current.height };
-        faceapi.matchDimensions(canvasRef.current, displaySize);
-        const resizedDetections = faceapi.resizeResults(detections, displaySize);
-        faceapi.draw.drawDetections(canvasRef.current, resizedDetections);
-        faceapi.draw.drawFaceLandmarks(canvasRef.current, resizedDetections);
-        faceapi.draw.drawFaceExpressions(canvasRef.current, resizedDetections);
+        if (videoRef.current) {
+            const displaySize = { width: videoRef.current.width, height: videoRef.current.height };
+            faceapi.matchDimensions(canvasRef.current, displaySize);
+            const resizedDetections = faceapi.resizeResults(detections, displaySize);
+            faceapi.draw.drawDetections(canvasRef.current, resizedDetections);
+            faceapi.draw.drawFaceLandmarks(canvasRef.current, resizedDetections);
+            faceapi.draw.drawFaceExpressions(canvasRef.current, resizedDetections);
+        }
 
       }
     }, 100);
