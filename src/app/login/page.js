@@ -1,1 +1,65 @@
-\'use client\';\nimport { useState } from \'react\';\nimport { useRouter } from \'next/navigation\';\nimport Link from \'next/link\';\nimport GlassCard from \'@/components/ui/GlassCard\';\nimport FloatingButton from \'@/components/ui/FloatingButton\';\n\nexport default function LoginPage() {\n  const [email, setEmail] = useState(\'\');\n  const [password, setPassword] = useState(\'\');\n  const [error, setError] = useState(\'\');\n  const router = useRouter();\n\n  const handleSubmit = async (e) => {\n    e.preventDefault();\n    setError(\'\');\n\n    // For now, we\'ll just log the credentials and redirect\n    console.log({ email, password });\n    // Replace this with your actual authentication logic\n    if (email && password) {\n      router.push(\'/scan\');\n    } else {\n      setError(\'Please enter both email and password.\');\n    }\n  };\n\n  return (\n    <main className=\"flex min-h-screen flex-col items-center justify-center p-8\">\n      <GlassCard className=\"w-full max-w-md\">\n        <h1 className=\"text-4xl font-bold text-center mb-6\">Login</h1>\n        <form onSubmit={handleSubmit} className=\"flex flex-col gap-4\">\n          <input\n            type=\"email\"\n            placeholder=\"Email\"\n            value={email}\n            onChange={(e) => setEmail(e.target.value)}\n            className=\"px-4 py-3 bg-gray-700 bg-opacity-50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500\"\n          />\n          <input\n            type=\"password\"\n            placeholder=\"Password\"\n            value={password}\n            onChange={(e) => setPassword(e.target.value)}\n            className=\"px-4 py-3 bg-gray-700 bg-opacity-50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500\"\n          />\n          {error && <p className=\"text-red-500 text-sm\">{error}</p>}\n          <FloatingButton type=\"submit\" className=\"mt-4\">\n            Login\n          </FloatingButton>\n        </form>\n        <p className=\"text-center mt-4 text-sm\">\n          Don\'t have an account?{\' \}\n          <Link href=\"/register\" className=\"text-purple-400 hover:underline\">\n            Register\n          </Link>\n        </p>\n      </GlassCard>\n    </main>\n  );\n}\n
+'use client';
+
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import GlassCard from '@/components/ui/GlassCard';
+import FloatingButton from '@/components/ui/FloatingButton';
+
+export default function LoginPage() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState(null);
+  const router = useRouter();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError(null);
+
+    const res = await fetch('/api/auth/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, password }),
+    });
+
+    if (res.ok) {
+      router.push('/');
+    } else {
+      const data = await res.json();
+      setError(data.message);
+    }
+  };
+
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <GlassCard className="w-full max-w-md">
+        <h1 className="text-4xl font-bold text-center mb-8">Login</h1>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="bg-transparent border-b-2 border-white/50 text-white p-2 focus:outline-none focus:border-white"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="bg-transparent border-b-2 border-white/50 text-white p-2 focus:outline-none focus:border-white"
+          />
+          <FloatingButton type="submit">Login</FloatingButton>
+        </form>
+        {error && <p className="text-red-500 mt-4 text-center">{error}</p>}
+        <p className="text-center mt-4">
+          Don't have an account?{' '}
+          <a href="./register" className="text-blue-400 hover:underline">
+            Register
+          </a>
+        </p>
+      </GlassCard>
+    </main>
+  );
+}

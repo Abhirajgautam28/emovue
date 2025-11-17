@@ -33,7 +33,7 @@ export default function Home() {
             Welcome to EmoVue
           </h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Discover a new way to interact with AI. EmoVue understands your emotions and provides a personalized chat experience.
+            Discover a new way to interact with AI. EmoVue understands your emotions and provides a personalized chat experience. Your AI companion that understands you.
           </p>
           <FloatingButton onClick={() => router.push('/login')} className="text-lg">
             Get Started
@@ -43,7 +43,7 @@ export default function Home() {
         <div className="mt-16 grid md:grid-cols-3 gap-8 max-w-6xl w-full">
           <GlassCard>
             <h2 className="text-2xl font-bold mb-3">How It Works</h2>
-            <p>EmoVue uses your webcam to analyze your facial expressions in real-time. Our advanced AI then tailors its responses to match your mood, creating a truly empathetic conversation.</p>
+            <p>EmoVue uses your webcam to analyze your facial expressions in real-time. Our advanced AI then tailors its responses to match your mood, creating a truly empathetic conversation. This seamless integration of emotion recognition technology allows for a more natural and intuitive interaction with our AI.</p>
           </GlassCard>
           <GlassCard>
             <h2 className="text-2xl font-bold mb-3">Key Features</h2>
@@ -52,12 +52,30 @@ export default function Home() {
               <li>Personalized AI chat</li>
               <li>Secure and private</li>
               <li>Modern and intuitive design</li>
+              <li>Seamless user experience</li>
+              <li>24/7 availability</li>
             </ul>
           </GlassCard>
           <GlassCard>
             <h2 className="text-2xl font-bold mb-3">About Us</h2>
-            <p>We are a team of passionate developers and designers dedicated to creating innovative and meaningful digital experiences. EmoVue is our latest project, and we hope you enjoy it.</p>
+            <p>We are a team of passionate developers and designers dedicated to creating innovative and meaningful digital experiences. EmoVue is our latest project, and we hope you enjoy it. Our mission is to bridge the gap between technology and human emotion, creating a more empathetic digital world.</p>
           </GlassCard>
+        </div>
+
+        <div className="mt-16 text-center max-w-2xl">
+          <h2 className="text-3xl font-bold mb-4">Ready to Experience the Future of AI?</h2>
+          <p className="text-lg mb-8">
+            Join EmoVue today and start your journey with an AI that truly understands you.
+          </p>
+          <FloatingButton onClick={() => router.push('/register')} className="text-lg">
+            Sign Up Now
+          </FloatingButton>
+        </div>
+
+        <div className="mt-16 text-center max-w-2xl">
+          <h2 className="text-2xl font-bold mb-2">Demo Account</h2>
+          <p>Email: <span className="font-mono">demouser@emovue.com</span></p>
+          <p>Password: <span className="font-mono">password123</span></p>
         </div>
       </div>
     </main>

@@ -1,47 +1,48 @@
-
-# Project Blueprint: EmoVue
+# EmoVue Blueprint
 
 ## Overview
 
-EmoVue is a web application that uses a webcam to scan a user's facial expression, determine their mood, and then provide a personalized chat experience with an AI companion. The application is built with Next.js and incorporates modern design principles for a beautiful and intuitive user experience.
+EmoVue is a Next.js web application that provides a personalized chat experience by understanding user emotions through real-time facial analysis. It features a modern, intuitive interface with a 3D animated homepage and a seamless user authentication flow.
 
-## Implemented Features (as of previous state)
+## Project Outline
 
-*   **Facial Emotion Recognition:** The core feature of the application, using `face-api.js` to detect emotions from a live video stream.
-*   **3D Animated Homepage:** A visually engaging homepage featuring a 3D scene.
-*   **Glassmorphism UI:** Use of `GlassCard` components to create a modern, layered look.
-*   **Basic Routing:** Navigation between the homepage, login page, scan page, and chat page.
+### Framework & Styling
+- **Framework:** Next.js 14 with App Router
+- **Styling:** Tailwind CSS for a utility-first styling approach.
+- **UI Components:**
+    - `GlassCard`: A reusable card component with a glassmorphism effect, used for creating visually appealing containers.
+    - `FloatingButton`: A reusable button with a floating effect, providing interactive and modern user controls.
 
-## Current Task: Fixes, Authentication, and Redesign
+### Backend & Database
+- **Database:** MongoDB Atlas for storing user data.
+- **Authentication:** Custom email and password authentication.
+    - `/api/auth/register`: API endpoint for user registration.
+    - `/api/auth/login`: API endpoint for user login.
+- **Environment Variables:** MongoDB connection string is managed securely using a `.env.local` file.
 
-The following plan outlines the steps to fix critical build issues, implement a complete user authentication system with MongoDB, and enhance the overall design and user experience of the application.
+### Features & Pages
+- **Homepage (`/`)**
+    - A visually engaging homepage with a 3D animated scene using `react-three-fiber`.
+    - Provides a clear overview of the application's features and purpose.
+    - Includes a call-to-action to encourage user registration.
+    - Demo user credentials are provided for easy access.
+- **Authentication Pages**
+    - **Registration Page (`/register`)**: A clean and simple form for new users to create an account.
+    - **Login Page (`/login`)**: A form for existing users to log in.
+- **Core Application Pages**
+    - **Chat Page (`/chat`)**: The main interface for users to interact with the emotion-aware AI.
+    - **Scan Page (`/scan`)**: A dedicated page for the facial emotion scanning process.
 
-### 1. **Resolve Core Build Issue**
-*   **Problem:** The `next build` command was not generating a production-ready `out` directory because of an incorrect `output: 'export'` configuration in `next.config.js` for a dynamic application.
-*   **Solution:** Remove the `output: 'export'` setting to enable a standard Next.js server-side build, which is necessary for database integration and authentication.
+### Project Structure
+- `/app`: Contains the main application pages using the Next.js App Router.
+- `/pages/api`: Contains the API routes for authentication.
+- `/components`: Houses reusable React components for UI and 3D scenes.
+- `/lib`: Includes utility functions, such as the MongoDB connection helper.
 
-### 2. **Implement Full User Authentication**
-*   **Backend Setup:**
-    *   Integrate MongoDB using the provided connection string.
-    *   Install `mongodb` and `bcryptjs` for database interaction and password hashing.
-    *   Create a secure MongoDB connection utility.
-    *   Use `next-auth` for session management.
-*   **API Endpoints:**
-    *   **Register (`/api/auth/register`):** Create a new API route to handle user registration, including password hashing and database entry.
-    *   **Login (`/api/auth/[...nextauth]`):** Configure `next-auth` with a Credentials Provider to validate user credentials against the MongoDB database.
-*   **Frontend Pages:**
-    *   **New Register Page (`/register`):** A new, beautifully designed page for users to create an account.
-    *   **Redesigned Login Page (`/login`):** An improved login page that securely handles authentication and provides clear user feedback. It will include a link to the new register page.
+## Current Request: Deploy the Application
 
-### 3. **Enhance UI/UX**
-*   **Homepage Redesign:**
-    *   Add detailed sections: "How It Works," "Key Features," and a compelling "About" section.
-    *   Implement automatic, continuous animation for the background 3D elements to create a more dynamic and engaging experience without user interaction.
-*   **Navigation:** Improve the navigation flow between the homepage, login, and register pages.
+The user has requested to deploy the application.
 
-### 4. **Demo Credentials**
-*   Upon completion, the application will be ready for testing. You can register a new user or use the following credentials:
-    *   **Email:** `user@example.com`
-    *   **Password:** `password123`
-
-This comprehensive plan will result in a robust, fully functional, and visually stunning application, ready for your project submission.
+**Plan:**
+1.  **Create `blueprint.md`:** Document the project's current state, features, and architecture.
+2.  **Deploy to Firebase:** Use the `classic_firebase_hosting_deploy` tool to deploy the Next.js application as a server-side rendered app. The build output is in the `.next` directory.

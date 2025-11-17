@@ -19,16 +19,19 @@ export async function POST(req) {
     const db = client.db('emovue');
     const usersCollection = db.collection('users');
 
-    const existingUser = await usersCollection.findOne({ email });
-    if (existingUser) {
-      return NextResponse.json({ message: 'User already exists' }, { status: 409 });
+    const user = await usersCollection.findOne({ email });
+
+    if (!user) {
+      return NextResponse.json({ message: 'Invalid credentials' }, { status: 401 });
     }
 
-    const hashedPassword = await bcrypt.hash(password, 10);
+    const isPasswordValid = await bcrypt.compare(password, user.password);
 
-    await usersCollection.insertOne({ email, password: hashedPassword });
+    if (!isPasswordValid) {
+      return NextResponse.json({ message: 'Invalid credentials' }, { status: 401 });
+    }
 
-    return NextResponse.json({ message: 'User created successfully' }, { status: 201 });
+    return NextResponse.json({ message: 'Login successful' }, { status: 200 });
   } catch (error) {
     return NextResponse.json({ message: 'Internal server error' }, { status: 500 });
   } finally {
