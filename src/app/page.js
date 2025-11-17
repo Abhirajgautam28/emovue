@@ -1,52 +1,54 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
-import GlassCard from '../components/ui/GlassCard';
-import FuturisticShape from '../components/3d/FuturisticShape';
+import { useRouter } from 'next/navigation';
+import Scene from '@/components/3d/Scene';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Stars } from '@react-three/drei';
+import FloatingButton from '@/components/ui/FloatingButton';
+
+function Orb() {
+  return (
+    <mesh>
+      <sphereGeometry args={[1, 32, 32]} />
+      <meshStandardMaterial color="#6c3e9a" emissive="#6c3e9a" emissiveIntensity={2} />
+    </mesh>
+  );
+}
+
 
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-center p-4 relative overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <FuturisticShape />
-      </div>
+    <main className="flex min-h-screen flex-col items-center justify-center p-24 relative overflow-hidden">
+        <Scene>
+          <Stars />
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[0, 0, 5]} intensity={1} />
+          <Orb />
+          <OrbitControls />
+        </Scene>
       <motion.div
-        initial={{ opacity: 0, scale: 1.2 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.5, ease: 'easeInOut' }}
-        className="absolute inset-0 z-0"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="z-10 text-center"
       >
-        <div className="absolute inset-0 bg-gradient-to-tr from-purple-600 via-pink-500 to-red-500 opacity-20"></div>
+        <h1 className="text-6xl font-bold">Welcome to EmoWell</h1>
+        <p className="text-xl mt-4">Your personalized AI companion for emotional wellness.</p>
       </motion.div>
 
-      <GlassCard className="z-10">
-        <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          Welcome to EmoWell
-        </motion.h1>
-        <motion.p
-          className="text-lg md:text-xl text-gray-300 mb-8"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-        >
-          Your personal AI companion for emotional wellness.
-        </motion.p>
-        <Link href="/login">
-          <motion.button
-            className="bg-white/20 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-white/30 transition-all duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Get Started
-          </motion.button>
-        </Link>
-      </GlassCard>
-    </div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="z-10 mt-8"
+      >
+        <FloatingButton onClick={() => router.push('/login')}>
+          Get Started
+        </FloatingButton>
+      </motion.div>
+    </main>
   );
 }

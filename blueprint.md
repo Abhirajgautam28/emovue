@@ -1,40 +1,38 @@
-# EmoWell - Emotional Wellness App
+
+# EmoWell - AI Companion for Emotional Wellness
 
 ## Overview
 
-EmoWell is a futuristic AI companion designed to support your emotional wellness. The application provides a modern and engaging user experience, with a focus on visual appeal and intuitive interaction.
+EmoWell is a Next.js application designed to be an AI-powered companion for emotional wellness. It uses a combination of 3D animations, real-time emotion detection, and a conversational AI to provide a unique and engaging user experience.
 
-## Design and Features
+## Implemented Features
 
-### Visual Design
+### Onboarding Experience
+- **3D Animated Landing Page:** A visually stunning landing page with a 3D orb and starfield background, created with `@react-three/fiber` and `@react-three/drei`.
+- **Animated Text and Button:** The headline and "Get Started" button are animated using `framer-motion` for a smooth and modern feel.
 
-*   **Theme:** Futuristic, with a dark background, vibrant gradients, and a subtle noise texture.
-*   **Glassmorphism:** Reusable `GlassCard` component for a modern, semi-transparent UI.
-*   **Animations:** `framer-motion` for smooth page transitions and interactive element animations.
-*   **Typography:** `Inter` font for a clean and readable text.
+### User Authentication
+- **Glassmorphism Login Form:** A sleek login form with a "glassmorphism" effect, allowing users to enter their credentials.
 
-### Core Features
+### Mood Detection
+- **Real-time Emotion Scanning:** The application uses `face-api.js` to access the user's webcam and detect their dominant emotion in real-time.
+- **Visual Feedback:** The webcam feed is displayed with an overlay showing facial landmarks and the detected emotion.
 
-*   **Onboarding:** A visually appealing welcome screen that sets the tone for the application.
-*   **Login:** A simple login page (authentication to be implemented).
-*   **Mood Scan:** A placeholder page for the facial recognition feature.
-*   **Chat:** An interactive chat interface for the user to communicate with the AI assistant.
+### AI Chat
+- **Conversational Interface:** A chat window allows users to interact with the AI companion.
+- **API-Powered Chat:** The chat is connected to a backend API that will eventually be powered by a Large Language Model.
 
-### File Structure
+### UI Components
+- **`GlassCard`:** A reusable component for creating UI elements with a "glassmorphism" effect.
+- **`FloatingButton`:** A reusable floating action button for primary actions.
+- **`Scene`:** A wrapper component for Three.js scenes.
 
-*   `src/app/`: Main application directory.
-    *   `layout.js`: Root layout with the base styles.
-    *   `page.js`: Onboarding page.
-    *   `login/page.js`: Login page.
-    *   `scan/page.js`: Mood scan page.
-    *   `chat/page.js`: Chat page.
-*   `src/components/ui/GlassCard.js`: Reusable glassmorphism card component.
-*   `tailwind.config.mjs`: Tailwind CSS configuration.
-*   `postcss.config.mjs`: PostCSS configuration.
+### Styling
+- **Dark Theme:** The application uses a dark theme for a modern and visually comfortable experience.
+- **Tailwind CSS:** The UI is styled using the Tailwind CSS framework for rapid and consistent styling.
 
-## Current Plan
+## Plan
 
-*   Flesh out the UI and add more visual details.
-*   Implement the facial recognition and mood detection feature.
-*   Integrate the AI chat functionality.
-*   Add authentication.
+- **Install Dependencies:** Install `@react-three/fiber`, `@react-three/drei`, `framer-motion`, and `face-api.js`.
+- **Set up `face-api.js` models:** Download and place the `face-api.js` models in the `public/models` directory.
+- **Create `blueprint.md`:** Create and populate the `blueprint.md` file with the project overview, implemented features, and the plan.
