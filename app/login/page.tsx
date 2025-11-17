@@ -40,7 +40,7 @@ export default function LoginPage() {
         </form>
         <div className="text-center">
           <p className="text-gray-400">
-            Don't have an account?{' '}
+            Don&apos;t have an account?{' '}
             <a href="/register" className="font-medium text-purple-400 hover:text-purple-300">
               Register
             </a>

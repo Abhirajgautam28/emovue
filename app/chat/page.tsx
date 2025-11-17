@@ -32,7 +32,7 @@ export default function ChatPage() {
           </div>
           <div className="flex items-start justify-end">
             <div className="mr-3 bg-purple-600 p-3 rounded-lg">
-              <p>I'm feeling a bit anxious about my upcoming presentation.</p>
+              <p>I&apos;m feeling a bit anxious about my upcoming presentation.</p>
             </div>
             <div className="flex-shrink-0">
               <User className="w-8 h-8 rounded-full bg-gray-700 p-1" />
