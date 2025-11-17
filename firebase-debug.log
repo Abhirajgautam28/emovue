@@ -1,0 +1,48 @@
+[debug] [2025-11-17T16:14:52.084Z] ----------------------------------------------------------------------
+[debug] [2025-11-17T16:14:52.087Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/f77kilzcw5hh2gidh22k6pj8cp7pxp7h-firebase-tools-14.22.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy
+[debug] [2025-11-17T16:14:52.088Z] CLI Version:   14.22.0
+[debug] [2025-11-17T16:14:52.088Z] Platform:      linux
+[debug] [2025-11-17T16:14:52.088Z] Node Version:  v20.19.1
+[debug] [2025-11-17T16:14:52.088Z] Time:          Mon Nov 17 2025 16:14:52 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-11-17T16:14:52.089Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-17T16:14:52.610Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:52.611Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:52.615Z] >>> [apiv2][query] GET https://monospace-pa.googleapis.com/v1/workspaces/emovue-51126767 [none]
+[debug] [2025-11-17T16:14:53.536Z] <<< [apiv2][status] GET https://monospace-pa.googleapis.com/v1/workspaces/emovue-51126767 200
+[debug] [2025-11-17T16:14:53.537Z] <<< [apiv2][body] GET https://monospace-pa.googleapis.com/v1/workspaces/emovue-51126767 {"workspaceId":"emovue-51126767","name":"EmoVue","workspaceRedirectUrl":"firebase-emovue-1763391220139.cluster-va5f6x3wzzh4stde63ddr3qgge.cloudworkstations.dev","status":"WORKSPACE_STATUS_RUNNING","lastAccessDatetime":"2025-11-17T15:18:00.935848Z","workspaceTemplate":"WORKSPACE_TEMPLATE_BLANK_WEB","owner":"SELF","serviceAccountEmail":"msp-7162808632697636567@monospace-1.iam.gserviceaccount.com","enableNix":true,"ownerEmail":"AbhirajGautam28@gmail.com","workspaceImageUrl":"https://www.gstatic.com/monospace/231115/logo_nextjs.svg","templateArgs":"{\"language\":\"js\",\"srcDir\":true,\"eslint\":true,\"app\":true,\"tailwind\":true,\"__agentic_workspace\":true}","templateRepoUrl":"file:///usr/local/monospace/templates/public/nextjs","workstationAccessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vd29ya3N0YXRpb25zIiwiYXVkIjoiZmlyZWJhc2UtZW1vdnVlLTE3NjMzOTEyMjAxMzkuY2x1c3Rlci12YTVmNngzd3p6aDRzdGRlNjNkZHIzcWdnZS5jbG91ZHdvcmtzdGF0aW9ucy5kZXYiLCJpYXQiOjE3NjMzOTYwOTMsImV4cCI6MTc2MzQ4MjQ5M30.3jLNmeQlbCyrCPosMz_ImELGA7-WhZcd0GZuB9sgiIdOPSdbfzWVLRHy16fKADdS-8FZXVOxcQWIRli9J9vsxEZFTQFqX5nu8RKng46PrdT8pBgLmSVv3mZtp-l-_oHOTzcsq5_Q8jQV8wG3Dv0YX6Axvndii9dmBiRvuXfeDesHNOrQLVCRFZme7flofJWU2K3hw3rZ4xcyL0H83ueV7w3RV9cF_vBam5uljBA7KN8977P0OevF6VUdRnlrsejwOhFH8eRQug7VLjFIcex0RDaFto-5zzaDPCVaeTxa5J861fspW6tbJxJwOdRLQEq7XjRwsB4jGVFYxsFsDZ137w","firebaseProjectId":"emovue-51126767-db824"}
+[debug] [2025-11-17T16:14:53.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-17T16:14:53.539Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[debug] [2025-11-17T16:14:53.540Z] [iam] checking project emovue-51126767-db824 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-11-17T16:14:53.541Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:53.541Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:53.541Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/emovue-51126767-db824:testIamPermissions [none]
+[debug] [2025-11-17T16:14:53.541Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/emovue-51126767-db824:testIamPermissions x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-17T16:14:53.541Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/emovue-51126767-db824:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-11-17T16:14:54.313Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/emovue-51126767-db824:testIamPermissions 200
+[debug] [2025-11-17T16:14:54.313Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/emovue-51126767-db824:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-11-17T16:14:54.314Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:54.314Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:54.314Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/emovue-51126767-db824/serviceAccounts/emovue-51126767-db824@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-11-17T16:14:54.314Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/emovue-51126767-db824/serviceAccounts/emovue-51126767-db824@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-11-17T16:14:55.258Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/emovue-51126767-db824/serviceAccounts/emovue-51126767-db824@appspot.gserviceaccount.com:testIamPermissions 404
+[debug] [2025-11-17T16:14:55.258Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/emovue-51126767-db824/serviceAccounts/emovue-51126767-db824@appspot.gserviceaccount.com:testIamPermissions {"error":{"code":404,"message":"Unknown service account","status":"NOT_FOUND"}}
+[debug] [2025-11-17T16:14:55.260Z] [functions] service account IAM check errored, deploy may fail:Request to https://iam.googleapis.com/v1/projects/emovue-51126767-db824/serviceAccounts/emovue-51126767-db824@appspot.gserviceaccount.com:testIamPermissions had HTTP Error: 404, Unknown service account {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"Unknown service account","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://iam.googleapis.com/v1/projects/emovue-51126767-db824/serviceAccounts/emovue-51126767-db824@appspot.gserviceaccount.com:testIamPermissions had HTTP Error: 404, Unknown service account","status":404}
+[debug] [2025-11-17T16:14:55.263Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:55.263Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:55.264Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/emovue-51126767-db824 [none]
+[debug] [2025-11-17T16:14:55.515Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/emovue-51126767-db824 200
+[debug] [2025-11-17T16:14:55.515Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/emovue-51126767-db824 {"projectId":"emovue-51126767-db824","projectNumber":"792015026828","displayName":"Firebase app","name":"projects/emovue-51126767-db824","resources":{"hostingSite":"emovue-51126767-db824"},"state":"ACTIVE","etag":"1_c185b95b-3971-41c9-a3b4-cf0663063039"}
+[info] 
+[info] === Deploying to 'emovue-51126767-db824'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2025-11-17T16:14:55.525Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:55.525Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:55.525Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-11-17T16:14:55.526Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-17T16:14:56.586Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-11-17T16:14:56.586Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-11-17T16:14:56.594Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:56.594Z] Checked if tokens are valid: true, expires at: 1763399284586
+[debug] [2025-11-17T16:14:56.594Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/emovue-51126767-db824 [none]
