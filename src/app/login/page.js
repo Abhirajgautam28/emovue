@@ -3,8 +3,16 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import GlassCard from '@/components/ui/GlassCard';
-import FloatingButton from '@/components/ui/FloatingButton';
+import {
+  Container,
+  Card,
+  CardContent,
+  Typography,
+  TextField,
+  Button,
+  Box,
+  Alert,
+} from '@mui/material';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -16,47 +24,107 @@ export default function LoginPage() {
     e.preventDefault();
     setError('');
 
-    // For now, we'll just log the credentials and redirect
-    console.log({ email, password });
-    // Replace this with your actual authentication logic
-    if (email && password) {
-      router.push('/scan');
-    } else {
+    // Basic validation
+    if (!email || !password) {
       setError('Please enter both email and password.');
+      return;
     }
+
+    // Mock authentication logic
+    console.log({ email, password });
+    router.push('/scan');
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8">
-      <GlassCard className="w-full max-w-md">
-        <h1 className="text-4xl font-bold text-center mb-6">Login</h1>
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="px-4 py-3 bg-gray-700 bg-opacity-50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="px-4 py-3 bg-gray-700 bg-opacity-50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
-          />
-          {error && <p className="text-red-500 text-sm">{error}</p>}
-          <FloatingButton type="submit" className="mt-4">
+    <Container
+      component="main"
+      maxWidth="xs"
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '100vh',
+      }}
+    >
+      <Card
+        sx={{
+          background: 'rgba(255, 255, 255, 0.1)',
+          backdropFilter: 'blur(10px)',
+          borderRadius: '16px',
+          boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+          border: '1px solid rgba(255, 255, 255, 0.18)',
+          width: '100%',
+          maxWidth: '400px',
+        }}
+      >
+        <CardContent sx={{ padding: '32px' }}>
+          <Typography variant="h4" component="h1" gutterBottom textAlign="center">
             Login
-          </FloatingButton>
-        </form>
-        <p className="text-center mt-4 text-sm">
-          Don't have an account?{" "}
-          <Link href="/register" className="text-purple-400 hover:underline">
-            Register
-          </Link>
-        </p>
-      </GlassCard>
-    </main>
+          </Typography>
+          <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1 }}>
+            {error && (
+              <Alert severity="error" sx={{ mb: 2 }}>
+                {error}
+              </Alert>
+            )}
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="email"
+              label="Email Address"
+              name="email"
+              autoComplete="email"
+              autoFocus
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              InputLabelProps={{
+                style: { color: '#fff' },
+              }}
+              InputProps={{
+                style: { color: '#fff' },
+              }}
+            />
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              name="password"
+              label="Password"
+              type="password"
+              id="password"
+              autoComplete="current-password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              InputLabelProps={{
+                style: { color: '#fff' },
+              }}
+              InputProps={{
+                style: { color: '#fff' },
+              }}
+            />
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              size="large"
+              sx={{ mt: 3, mb: 2, padding: '12px' }}
+            >
+              Login
+            </Button>
+            <Typography variant="body2" color="text.secondary" align="center">
+              Don&apos;t have an account?{' '}
+              <Link href="/register" passHref>
+                <Typography component="span" color="primary">
+                  Register
+                </Typography>
+              </Link>
+            </Typography>
+          </Box>
+        </CardContent>
+      </Card>
+    </Container>
   );
 }
