@@ -1,38 +1,25 @@
-# EmoVue Application Blueprint
+# EmoVue - Application Blueprint
 
 ## Overview
 
-EmoVue is a web application that understands your emotions and provides a personalized chat experience. It's your AI companion that understands you.
+EmoVue is a Next.js application designed to analyze emotions from facial expressions. It will use a combination of front-end and back-end technologies to deliver a seamless user experience.
 
-## Implemented Features
+## Project Structure
 
-*   **Initial Project Setup:** A Next.js project with basic pages for login, register, chat, and scan.
-*   **Firebase Integration (Attempted):** Initial setup for Firebase hosting and functions was configured but not deployed.
+- **Framework:** Next.js with App Router
+- **Styling:** Tailwind CSS
+- **UI Components:** Custom components for a unique look and feel.
 
-## Redesign Plan
+## Features
 
-### Phase 1: Core Pages Redesign
+- **User Authentication:** Secure login and registration functionality.
+- **Facial Emotion Recognition:** Real-time emotion analysis from a webcam feed.
 
-*   **Objective:** To create a modern, visually appealing, and user-friendly interface for the core pages of the application (Login, Register, Chat, and Scan).
-*   **Key Changes:**
-    *   **Color Palette:** Introduce a vibrant and energetic color palette.
-    *   **Typography:** Utilize expressive and hierarchical typography to improve readability and visual appeal.
-    *   **Layout:** Implement a balanced and responsive layout with clean spacing.
-    *   **Component Styling:** Redesign buttons, forms, and other UI elements to be more modern and interactive.
-    *   **Iconography:** Incorporate icons to enhance usability and navigation.
+## Current Plan
 
-### Execution Steps:
+The immediate goal is to resolve the critical errors that are preventing the application from running. The plan is as follows:
 
-1.  **Global Styles:** Update the global stylesheet (`app/globals.css`) with the new color palette, typography, and background styles.
-2.  **Login Page (`app/login/page.tsx`):** Redesign the login form with improved styling and layout.
-3.  **Register Page (`app/register/page.tsx`):** Redesign the registration form to be consistent with the new design.
-4.  **Chat Page (`app/chat/page.tsx`):** Create a modern and intuitive chat interface.
-5.  **Scan Page (`app/scan/page.tsx`):** Design a visually engaging page for the scan feature.
-
-## Bug Fixes and Refinements
-
-*   **Resolved Hydration Error:** Added `suppressHydrationWarning` to the root layout to prevent console errors during development.
-*   **Corrected Unescaped Entities:** Fixed issues with unescaped single quotes in the chat and login pages.
-*   **Removed Legacy Files:** Deleted conflicting files and directories from the `src` directory to ensure a clean and modern project structure.
-*   **Resolved CSS Conflicts:** Fixed a conflict in `globals.css` that was causing a blank homepage.
-*   **Code Quality:** Ran the linter to identify and fix potential code quality issues, ensuring a stable and maintainable codebase.
+1.  **Correct Project Configuration:** Fix issues in `next.config.mjs` and `tsconfig.json` to ensure the project is correctly configured for the App Router and path aliases.
+2.  **Clean and Reinstall Dependencies:** Remove all existing `node_modules` and the `.next` directory to start with a clean slate, then reinstall all dependencies.
+3.  **Fix Code-Level Errors:** Address the syntax errors and module resolution problems in the application's code.
+4.  **Ensure Environment Stability:** Verify that the development environment is stable and that the application runs without errors.
