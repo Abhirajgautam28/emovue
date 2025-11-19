@@ -2,7 +2,7 @@
 
 ## Overview
 
-A simple Next.js web application with a welcome page and a login page. This serves as a basic template for a user authentication flow, with a focus on a modern and visually appealing user interface.
+A simple Next.js web application with a welcome page, a login page, and a protected dashboard page. This application demonstrates a complete user authentication flow using NextAuth.js, with a focus on a modern and visually appealing user interface.
 
 ## Project Structure
 
@@ -12,8 +12,21 @@ A simple Next.js web application with a welcome page and a login page. This serv
   - `page.tsx`: The main welcome page.
   - `/login`: Directory for the login route.
     - `page.tsx`: The UI for the login page.
+  - `/dashboard`: Directory for the dashboard route.
+    - `page.tsx`: The UI for the dashboard page.
+  - `/lib`:
+    - `actions.ts`: Server Actions for handling user authentication.
+    - `definitions.ts`: TypeScript definitions for the application.
+  - `/ui`:
+    - `button.tsx`: A reusable button component.
+    - `fonts.ts`: Font definitions for the application.
+    - `login-form.tsx`: The login form component.
   - `/components`: For reusable UI components.
     -`ThreeScene.tsx`: A 3D scene component using Three.js.
+- `auth.config.ts`: Configuration for NextAuth.js.
+- `auth.ts`: NextAuth.js authentication logic.
+- `middleware.ts`: Middleware for protecting routes.
+- `seed.js`: A script to seed the database with an initial user.
 
 ## Features and Design
 
@@ -29,11 +42,27 @@ A simple Next.js web application with a welcome page and a login page. This serv
 - The form is presented in a white, rounded card with a prominent shadow, creating a "lifted" effect.
 - A "Welcome Back!" heading to greet returning users.
 - Modern input fields for email and password with placeholder text.
-- A "Remember me" checkbox and a "Forgot your password?" link.
 - A prominent "Sign in" button with a hover effect.
 - A link to go back to the welcome page.
 
+### Dashboard Page (`/dashboard`)
+- A protected page that is only accessible to authenticated users.
+- Displays a welcome message with the user's email address.
+- A "Sign out" button to log the user out.
+
+## Firebase Integration
+
+This project does not currently use Firebase. It uses a local database for user authentication.
+
 ## Development Log
+
+### Authentication Flow
+- Implemented a complete authentication flow using NextAuth.js.
+- Created a login page with a form that accepts an email and password.
+- Implemented a server action to handle user authentication.
+- Created a protected dashboard page that is only accessible to authenticated users.
+- Added a sign-out button to the dashboard page.
+- Seeded the database with an initial user.
 
 ### Initial State
 The project was in a broken state with multiple errors and incorrect file structures.

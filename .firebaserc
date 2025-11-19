@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "emovue-51126767-db824"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
