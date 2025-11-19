@@ -1,24 +1,18 @@
-import { ArrowRight } from 'lucide-react';
+import Link from "next/link";
+import dynamic from 'next/dynamic';
 
-export default function HomePage() {
+const ThreeScene = dynamic(() => import('./components/ThreeScene'), { ssr: false });
+
+export default function Page() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white text-center">
-      <div className="max-w-2xl p-8 space-y-8">
-        <h1 className="text-6xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-          Welcome to EmoVue
-        </h1>
-        <p className="text-xl text-gray-300">
-          Your AI companion that understands your emotions and provides a personalized chat experience.
-        </p>
-        <div className="flex justify-center gap-4">
-          <a
-            href="/login"
-            className="flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-300 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:from-purple-600 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 shadow-lg hover:shadow-purple-500/50"
-          >
-            <span>Get Started</span>
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </a>
-        </div>
+    <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 text-white">
+      <ThreeScene />
+      <div className="relative z-10 text-center p-8">
+        <h1 className="text-6xl font-bold mb-4 animate-fade-in-down">Welcome to Your App</h1>
+        <p className="text-xl mb-8 animate-fade-in-up">A beautiful and intuitive user experience starts here.</p>
+        <Link href="/login" className="bg-white text-blue-500 font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Get Started
+        </Link>
       </div>
     </div>
   );

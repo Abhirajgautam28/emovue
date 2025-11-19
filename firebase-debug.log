@@ -1,0 +1,220 @@
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:54:26.803Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:54:26.806Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[debug] [2025-11-19T06:54:26.833Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.834Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.835Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:26.854Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:26.857Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:26.877Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.877Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.878Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:26.882Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:26.882Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:26.892Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.892Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.893Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:26.894Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:26.894Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:26.901Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.902Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.902Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:26.902Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:26.902Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:26.945Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.948Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.948Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:26.948Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:26.949Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:26.954Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.955Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.955Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:26.956Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:26.956Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:54:26.982Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:54:26.985Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[debug] [2025-11-19T06:54:26.988Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.988Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.988Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:26.988Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:26.989Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:26.996Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.996Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:26.996Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:26.999Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:26.999Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:27.008Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:27.008Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:27.008Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:27.009Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:27.009Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:27.015Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:27.019Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:27.019Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:27.019Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:27.020Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:27.035Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:27.035Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:27.035Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:27.035Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:27.036Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:27.046Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:27.048Z] Checked if tokens are valid: false, expires at: 1763409290375
+[debug] [2025-11-19T06:54:27.048Z] > refreshing access token with scopes: []
+[debug] [2025-11-19T06:54:27.048Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-19T06:54:27.049Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:27.545Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:27.547Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:27.592Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseremoteconfig.googleapis.com [none]
+[debug] [2025-11-19T06:54:27.593Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseremoteconfig.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:27.626Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:27.628Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:27.661Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/storage.googleapis.com [none]
+[debug] [2025-11-19T06:54:27.662Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/storage.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:27.724Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:27.724Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:27.748Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/fcm.googleapis.com [none]
+[debug] [2025-11-19T06:54:27.748Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/fcm.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:27.761Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:27.761Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:27.784Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com [none]
+[debug] [2025-11-19T06:54:27.785Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:27.872Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:27.879Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:27.900Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/storage.googleapis.com [none]
+[debug] [2025-11-19T06:54:27.902Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/storage.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:27.942Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:27.942Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:27.961Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-11-19T06:54:27.961Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:27.985Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:27.985Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:28.008Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/fcm.googleapis.com [none]
+[debug] [2025-11-19T06:54:28.008Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/fcm.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:28.016Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:28.016Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:28.033Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com [none]
+[debug] [2025-11-19T06:54:28.033Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:28.058Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:28.060Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:28.076Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/identitytoolkit.googleapis.com [none]
+[debug] [2025-11-19T06:54:28.077Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/identitytoolkit.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:28.112Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:28.113Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:28.129Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-11-19T06:54:28.130Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:28.214Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:28.215Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:28.235Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseremoteconfig.googleapis.com [none]
+[debug] [2025-11-19T06:54:28.236Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseremoteconfig.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:28.282Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-19T06:54:28.282Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-19T06:54:28.298Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/identitytoolkit.googleapis.com [none]
+[debug] [2025-11-19T06:54:28.299Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/identitytoolkit.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:28.842Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseremoteconfig.googleapis.com 200
+[debug] [2025-11-19T06:54:28.843Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseremoteconfig.googleapis.com [omitted]
+[debug] [2025-11-19T06:54:28.914Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/storage.googleapis.com 200
+[debug] [2025-11-19T06:54:28.914Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/storage.googleapis.com [omitted]
+[debug] [2025-11-19T06:54:28.944Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/fcm.googleapis.com 200
+[debug] [2025-11-19T06:54:28.944Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/fcm.googleapis.com [omitted]
+[debug] [2025-11-19T06:54:28.965Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com 403
+[debug] [2025-11-19T06:54:28.965Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com [omitted]
+[debug] [2025-11-19T06:54:29.147Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com 403
+[debug] [2025-11-19T06:54:29.147Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com [omitted]
+[debug] [2025-11-19T06:54:29.175Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-11-19T06:54:29.175Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-11-19T06:54:29.200Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/storage.googleapis.com 200
+[debug] [2025-11-19T06:54:29.200Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/storage.googleapis.com [omitted]
+[debug] [2025-11-19T06:54:29.225Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/fcm.googleapis.com 200
+[debug] [2025-11-19T06:54:29.226Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/fcm.googleapis.com [omitted]
+[debug] [2025-11-19T06:54:29.476Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/identitytoolkit.googleapis.com 200
+[debug] [2025-11-19T06:54:29.479Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/identitytoolkit.googleapis.com [omitted]
+[debug] [2025-11-19T06:54:29.489Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-11-19T06:54:29.493Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-11-19T06:54:29.503Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseremoteconfig.googleapis.com 200
+[debug] [2025-11-19T06:54:29.503Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseremoteconfig.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:54:29.546Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:54:29.546Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:54:29.556Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:54:29.557Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[debug] [2025-11-19T06:54:29.563Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/identitytoolkit.googleapis.com 200
+[debug] [2025-11-19T06:54:29.563Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/identitytoolkit.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:54:59.050Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:54:59.052Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[debug] [2025-11-19T06:54:59.111Z] Checked if tokens are valid: true, expires at: 1763538867282
+[debug] [2025-11-19T06:54:59.111Z] Checked if tokens are valid: true, expires at: 1763538867282
+[debug] [2025-11-19T06:54:59.117Z] Checked if tokens are valid: true, expires at: 1763538867282
+[debug] [2025-11-19T06:54:59.119Z] Checked if tokens are valid: true, expires at: 1763538867282
+[debug] [2025-11-19T06:54:59.119Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:54:59.124Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[debug] [2025-11-19T06:54:59.129Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-11-19T06:54:59.129Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:59.145Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com [none]
+[debug] [2025-11-19T06:54:59.145Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:59.169Z] Checked if tokens are valid: true, expires at: 1763538867282
+[debug] [2025-11-19T06:54:59.169Z] Checked if tokens are valid: true, expires at: 1763538867282
+[debug] [2025-11-19T06:54:59.174Z] Checked if tokens are valid: true, expires at: 1763538867282
+[debug] [2025-11-19T06:54:59.174Z] Checked if tokens are valid: true, expires at: 1763538867282
+[debug] [2025-11-19T06:54:59.174Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-11-19T06:54:59.175Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:54:59.181Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com [none]
+[debug] [2025-11-19T06:54:59.181Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com x-goog-quota-user=projects/emovue-51126767-db824
+[debug] [2025-11-19T06:55:00.263Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com 403
+[debug] [2025-11-19T06:55:00.268Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com [omitted]
+[debug] [2025-11-19T06:55:00.365Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com 403
+[debug] [2025-11-19T06:55:00.365Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseio.com [omitted]
+[debug] [2025-11-19T06:55:00.520Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-11-19T06:55:00.520Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-11-19T06:55:00.543Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-11-19T06:55:00.543Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/emovue-51126767-db824/services/firebaseapphosting.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:55:00.572Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:55:00.573Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:55:00.584Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:55:00.584Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:55:00.655Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:55:00.655Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:55:00.661Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:55:00.667Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:55:00.726Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:55:00.726Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:55:00.741Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:55:00.742Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:55:21.202Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:55:21.202Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:55:21.212Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:55:21.212Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:55:21.236Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:55:21.236Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-11-19T06:55:21.249Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-11-19T06:55:21.249Z] > authorizing via signed-in user (abhirajgautam28@gmail.com)
