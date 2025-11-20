@@ -1,41 +1,106 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSession } from 'next-auth/react';
+import { Avatar, AvatarFallback, AvatarImage } from '@/app/components/ui/avatar';
+import { Button } from '@/app/components/ui/button';
+import { Input } from '@/app/components/ui/input';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/app/components/ui/card';
 
 export default function ChatPage() {
-  const [message, setMessage] = useState('');
-  const router = useRouter();
+  const { data: session } = useSession();
+  const [messages, setMessages] = useState<any[]>([]);
+  const [newMessage, setNewMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  useEffect(() => {
+    // In a real application, you would fetch the messages from a database.
+    // For this example, we'll just use some dummy data.
+    setMessages([
+      {
+        id: 1,
+        text: 'Hello there!',
+        user: {
+          name: 'Jane Doe',
+          image: 'https://github.com/shadcn.png',
+        },
+      },
+      {
+        id: 2,
+        text: 'Hi! How are you?',
+        user: {
+          name: 'John Doe',
+          image: 'https://github.com/shadcn.png',
+        },
+      },
+    ]);
+  }, []);
+
+  const handleSendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
-    router.push(`/output?message=${encodeURIComponent(message)}`);
+    if (!newMessage.trim()) return;
+
+    // In a real application, you would save the message to a database.
+    // For this example, we'll just add it to the local state.
+    setMessages([
+      ...messages,
+      {
+        id: messages.length + 1,
+        text: newMessage,
+        user: {
+          name: session?.user?.name || 'Anonymous',
+          image: session?.user?.image || 'https://github.com/shadcn.png',
+        },
+      },
+    ]);
+
+    setNewMessage('');
   };
 
+  if (!session) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white text-center p-4">
+        <h1 className="text-3xl font-bold mb-4">Access Denied</h1>
+        <p className="text-lg text-gray-400">You must be logged in to view this page.</p>
+      </div>
+    );
+  }
+
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-96">
-        <h1 className="text-2xl font-bold mb-4">Chat</h1>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-            Your Message
-          </label>
-          <textarea
-            id="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32"
+    <div className="flex flex-col h-screen bg-gray-900 text-white">
+      <header className="px-4 lg:px-6 h-14 flex items-center border-b border-gray-800">
+        <h1 className="text-xl font-bold">Real-Time Chat</h1>
+      </header>
+      <main className="flex-1 overflow-y-auto p-4">
+        <div className="space-y-4">
+          {messages.map((message) => (
+            <div key={message.id} className="flex items-start gap-4">
+              <Avatar>
+                <AvatarImage src={message.user.image} />
+                <AvatarFallback>{message.user.name[0]}</AvatarFallback>
+              </Avatar>
+              <div className="flex-1">
+                <div className="flex items-center gap-2">
+                  <span className="font-bold">{message.user.name}</span>
+                  <span className="text-xs text-gray-400">2:14 PM</span>
+                </div>
+                <p>{message.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </main>
+      <footer className="p-4 border-t border-gray-800">
+        <form onSubmit={handleSendMessage} className="flex items-center gap-4">
+          <Input
+            type="text"
+            placeholder="Type your message..."
+            value={newMessage}
+            onChange={(e) => setNewMessage(e.target.value)}
+            className="flex-1"
           />
-        </div>
-        <div className="flex items-center justify-end">
-          <button
-            type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
-            Send
-          </button>
-        </div>
-      </form>
+          <Button type="submit" className="bg-blue-600 hover:bg-blue-700">Send</Button>
+        </form>
+      </footer>
     </div>
   );
 }
