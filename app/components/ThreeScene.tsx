@@ -36,9 +36,9 @@ export default function ThreeScene() {
 
   return (
     <div className="absolute top-0 left-0 w-full h-full z-0">
-      <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
+      <Canvas camera={{ position: new THREE.Vector3(0, 0, 5), fov: 75 }}>
         <ambientLight intensity={0.1} />
-        <directionalLight position={[5, 5, 5]} />
+        <directionalLight position={new THREE.Vector3(5, 5, 5)} />
         {boxes.map((box, index) => (
             <RotatingBox key={index} {...box} />
         ))}

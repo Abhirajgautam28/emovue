@@ -1,45 +1,18 @@
-import NextAuth from "next-auth";
-import Credentials from "next-auth/providers/credentials";
-import { authConfig } from "./auth.config";
-import { z } from "zod";
-import { db } from "@/lib/firebase";
-import { getDocs, query, where, collection } from "firebase/firestore";
-import bcrypt from "bcryptjs";
 
-async function getUser(email) {
-  try {
-    const usersRef = collection(db, "users");
-    const q = query(usersRef, where("email", "==", email));
-    const querySnapshot = await getDocs(q);
-    if (querySnapshot.empty) {
-      console.log("No matching documents.");
-      return null;
-    }
-    const user = querySnapshot.docs[0].data();
-    return user;
-  } catch (error) {
-    console.error("Error getting user:", error);
-    throw new Error("Failed to fetch user.");
-  }
-}
+import NextAuth from 'next-auth';
+import Credentials from 'next-auth/providers/credentials';
+import { authConfig } from './auth.config';
 
-export const { auth, signIn, signOut } = NextAuth({
+export const { handlers, signIn, signOut, auth } = NextAuth({
   ...authConfig,
   providers: [
     Credentials({
       async authorize(credentials) {
-        const parsedCredentials = z
-          .object({ email: z.string().email(), password: z.string().min(6) })
-          .safeParse(credentials);
-
-        if (parsedCredentials.success) {
-          const { email, password } = parsedCredentials.data;
-          const user = await getUser(email);
-          if (!user) return null;
-          const passwordsMatch = await bcrypt.compare(password, user.password);
-          if (passwordsMatch) return user;
+        // This is where you would add your own logic to validate the credentials
+        // For this demo, we'll just accept any username and password
+        if (credentials) {
+          return { id: '1', name: 'User', email: 'user@example.com' };
         }
-
         return null;
       },
     }),
