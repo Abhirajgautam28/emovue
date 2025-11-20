@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import { auth, signIn, signOut } from '@/auth';
+import Link from 'next/link';
 
 const ThreeScene = dynamic(() => import('./components/ThreeScene'), { ssr: false });
 
@@ -15,16 +16,21 @@ export default async function Page() {
         {session ? (
           <div className="flex flex-col items-center">
             <p className="text-lg mb-4">Signed in as {session.user?.name}</p>
-            <form
-              action={async () => {
-                'use server';
-                await signOut();
-              }}
-            >
-              <button type="submit" className="bg-white text-red-500 font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                Sign Out
-              </button>
-            </form>
+            <div className="flex gap-4">
+              <Link href="/dashboard" className="bg-white text-blue-500 font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Go to Dashboard
+              </Link>
+              <form
+                action={async () => {
+                  'use server';
+                  await signOut();
+                }}
+              >
+                <button type="submit" className="bg-white text-red-500 font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                  Sign Out
+                </button>
+              </form>
+            </div>
           </div>
         ) : (
           <form
