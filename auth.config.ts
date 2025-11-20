@@ -31,15 +31,12 @@ export const authConfig: NextAuthConfig = {
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
-      const isOnDashboard = nextUrl.pathname.startsWith('/dashboard');
-      if (isOnDashboard) {
+      const isOnChat = nextUrl.pathname.startsWith('/chat');
+      if (isOnChat) {
         if (isLoggedIn) return true;
         return false; // Redirect unauthenticated users to login page
       } else if (isLoggedIn) {
-        if (nextUrl.pathname.startsWith('/login')) {
-            return Response.redirect(new URL('/dashboard', nextUrl));
-        }
-        return true;
+        return Response.redirect(new URL('/chat', nextUrl));
       }
       return true;
     },
