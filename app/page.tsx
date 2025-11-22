@@ -1,9 +1,11 @@
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/app/components/ui/button';
 import { Input } from '@/app/components/ui/input';
 import { Avatar, AvatarFallback, AvatarImage } from "@/app/components/ui/avatar"
 
+// Force a reload to apply the new configuration
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
@@ -89,10 +91,10 @@ export default function Page() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                width="550"
-                height="310"
+                width={550}
+                height={310}
                 alt="Image"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
               />
@@ -136,7 +138,7 @@ export default function Page() {
                 Experience the Future of Collaboration
               </h2>
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                The only platform you'll ever need to get work done.
+                The only platform you&apos;ll ever need to get work done.
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">

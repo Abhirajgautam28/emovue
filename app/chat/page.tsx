@@ -73,19 +73,21 @@ export default function ChatPage() {
       <main className="flex-1 overflow-y-auto p-4">
         <div className="space-y-4">
           {messages.map((message) => (
-            <div key={message.id} className="flex items-start gap-4">
-              <Avatar>
-                <AvatarImage src={message.user.image} />
-                <AvatarFallback>{message.user.name[0]}</AvatarFallback>
-              </Avatar>
-              <div className="flex-1">
-                <div className="flex items-center gap-2">
-                  <span className="font-bold">{message.user.name}</span>
-                  <span className="text-xs text-gray-400">2:14 PM</span>
-                </div>
-                <p>{message.text}</p>
-              </div>
-            </div>
+            <Card key={message.id} className="bg-gray-800 border-gray-700">
+                <CardHeader className="flex flex-row items-center gap-4">
+                    <Avatar>
+                        <AvatarImage src={message.user.image} />
+                        <AvatarFallback>{message.user.name[0]}</AvatarFallback>
+                    </Avatar>
+                    <div className="flex-1">
+                        <CardTitle className="text-base font-bold">{message.user.name}</CardTitle>
+                        <p className="text-xs text-gray-400">2:14 PM</p>
+                    </div>
+                </CardHeader>
+                <CardContent>
+                    <p>{message.text}</p>
+                </CardContent>
+            </Card>
           ))}
         </div>
       </main>

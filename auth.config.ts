@@ -1,29 +1,7 @@
-
 import type { NextAuthConfig } from 'next-auth';
-import GitHub from 'next-auth/providers/github';
-import Credentials from 'next-auth/providers/credentials';
 
 export const authConfig: NextAuthConfig = {
-  providers: [
-    GitHub({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
-    }),
-    Credentials({
-      name: 'Credentials',
-      credentials: {
-        email: { label: 'Email', type: 'email' },
-        password: { label: 'Password', type: 'password' },
-      },
-      async authorize(credentials) {
-        if (credentials.email === 'test@example.com' && credentials.password === 'password') {
-          return { id: '1', name: 'Test User', email: 'test@example.com' };
-        } else {
-          return null;
-        }
-      },
-    }),
-  ],
+  providers: [],
   pages: {
     signIn: '/login',
   },
